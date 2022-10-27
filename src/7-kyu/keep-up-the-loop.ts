@@ -51,3 +51,4 @@ function keepLoop(loops: number): string{
     }
 }
 
+export default keepLoop

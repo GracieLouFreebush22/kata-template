@@ -40,15 +40,16 @@ function keepLoop(loops: number): string {
     if (loops >= 5){
         message = "there ya go buddy, you got this!"
     }
-    if (loops <= 20) {
+    if (loops >= 6 && loops < 20) {
         message = "look how far you've come!"
     }
-    if (loops >= 50) {
+    if (loops >= 20 && loops < 50) {
         message = "shoot for the stars!"
     }
-    if (loops > 51) {
+    if (loops >= 50) {
         message = "you're a hula-hooping pro!"
     }
+    return message
 }
 
 export default keepLoop

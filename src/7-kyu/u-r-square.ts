@@ -28,12 +28,20 @@ return RESULT
 
 function isSquare(num: number): boolean{
     let result: boolean = false
-    if (num % num === 0){
+    if (num=== 0){
         result = true 
-    } else {
-        result = false 
+    } 
+    for (let i = 1; i < num-1 ; i++){
+        if (num / i === i){
+            result = true 
+        } else{
+            result = false 
+        }
     }
-    return result 
-}
+    return result   
+    }
+    
+
+
 
 export default isSquare;

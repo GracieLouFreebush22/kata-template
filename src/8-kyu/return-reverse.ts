@@ -17,12 +17,13 @@ return outputList
 
 */
 
-function reverseList(arrayParam: string[]): string []{
-	let outputList: string[]= [];
+function reverseList(arrayParam: (string| number | boolean| object| []) []): (string| number | boolean |object| []) []{
+	let outputList: (string| number | boolean | object| []) [] = [];
 
 	for (let i = arrayParam.length - 1; i >= 0; i--){
-		let item = arrayParam[i];
+		let item: (string| number | boolean | object| []) = arrayParam[i];
 		outputList.push(item);
+		console.log(item, i);
 	}
 	return outputList
 }

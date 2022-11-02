@@ -11,7 +11,7 @@ function printAllValues(obj: any): any{
     }
 }
 
-const capitals = {
+const Capitals = {
     Afghanistan: "Kabul",
     Angola: "Luanda",
     Brazil: "Brasília",
@@ -28,4 +28,4 @@ const capitals = {
     Ukraine: "Kiev",
   };
 
-printAllValues(capitals)
+printAllValues(Capitals)
